@@ -1,7 +1,55 @@
-html {
-  max-width: 720px;
+html{
+  padding: 30px 15px;
+}
+*{
+	font-family: 'Roboto' sans-serif;
 }
 
-body {
-  background: #fff;
+.card{
+  color: red;
+}
+.card>p{
+  color: rgba(80, 300, 50, 0.5);
+}
+.card>p{
+  color: hsla(190, 5%, 80%, 0.8);
+}
+.card>p{
+  color: green;
+  -webkit-text-fill-color: rgb(216, 98, 29);
+  -webkit-text-stroke: 1.5px blue;
+}
+p:hover{
+  direction: rtl;
+}
+
+#test{
+  color: initial; 
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: initial;
+}
+#test{
+  color: inherit; 
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+}
+#test{
+  color: unset; 
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+}
+#test{
+  /* writing-mode: vertical-rl; */
+  text-align: center;
+}
+h3{
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+h3{
+	letter-spacing: 0.2em;
+}
+h3{
+	text-decoration: underline dashed red;
 }

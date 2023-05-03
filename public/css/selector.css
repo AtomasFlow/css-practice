@@ -1,0 +1,161 @@
+html {
+  max-width: 720px;
+  padding: 20px;
+}
+
+#test:target{
+  color: red;
+}
+
+.link:link{
+  color: red;
+}
+
+.link:hover{
+  color: green;
+} 
+
+.link:active{
+  color: blue;
+}
+
+input{
+  background: grey;
+}
+
+input:focus{
+  background: #9ea2ad;
+}
+
+.card:focus-within{
+  background: #9b8e99;
+}
+
+.card:lang(en)>span::after {
+  content: ' (en)';
+}
+.card:lang(fr){
+  background-color: blueviolet;
+}
+
+button{
+  background: #cddf8e;
+}
+button:enabled{
+  background: greenyellow;
+}
+button:disabled{
+  background: grey;
+}
+.inp:read-write{
+  border-radius: 10px;
+  background: green;
+}
+.inp:read-only{
+  background: grey;
+}
+input[type='checkbox']:checked~label{
+  background: red;
+}
+
+.valid:valid{
+  background: yellow;
+}
+.valid:invalid{
+  background: rgb(167, 115, 37);
+}
+.valid:optional{
+  background: rgb(48, 167, 37);
+}
+.number:focus{
+  background: rgb(179, 175, 175);
+}
+.number:out-of-range{
+  background: red;
+}
+.number:in-range{
+  background: rgb(66, 177, 109);
+}
+input:placeholder-shown~span{
+  background: pink;
+}
+
+/* ================== */
+
+.input-dark[type="number"]{}
+
+.small-img[alt~='small'] {}
+
+button[class|='btn'] {}
+button[class^='btn'] {}
+button[class*='btn'] {}
+button[class$='blue'] {}
+
+.btn.blue::first-letter{}
+div>button::after{content: '';}
+
+::placeholder{}
+
+
+div:first-child{}
+.item:first-child{
+  /* background: #000; */
+}
+li:last-child{}
+
+
+li:only-child{}
+
+
+.item:first-of-type {}
+.item:last-of-type {}
+
+.item:only-of-type {}
+
+/* с начала начинается для всих тегов*/
+p:nth-child(3) {}
+p:nth-child(odd) {}
+p:nth-child(even) {}
+p:nth-child(3n+ 1) {}
+
+/* с конца начинается для всих тегов*/
+p:nth-last-child(3n) {}
+
+/* по типу тегов*/
+p:nth-of-type(2) {}
+
+/* с конца начинается по типу тегов*/
+p:nth-last-of-type() {}
+
+/* тег в якому нема классу item */
+p:not(.item) {}
+
+/* вси елементи яки мають класс item окрим тегу p */
+.item:not(p){}
+
+/* для пустого тега */
+p:empty{}
+
+
+
+
+:root {}
+
+h1, .box, #user{}
+
+footer > h1 {}
+footer div.child {}
+footer .child {}
+
+
+h1 + p {}
+
+h1 ~ p
+h1 ~ * > p {}
+
+
+
+
+body {
+  
+}
