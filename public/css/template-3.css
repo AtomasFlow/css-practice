@@ -18,6 +18,8 @@
 
 	--weight-title: 500;
 	--weight-text: var(--weight-text);
+
+	--page_widht: 960px;
 }
 
 .page{
@@ -27,7 +29,7 @@
 }
 
 .page_content{
-	max-width: 960px;
+	max-width: var(--page_widht);
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -41,7 +43,15 @@
 	border-bottom: 1px solid var(--color-border);
 	display: flex;
 	justify-content: space-between;
+
+	position: sticky;
+	max-width: var(--page_widht);
+	width: 100%;
+	top: 0;
+	background: var(--color-white);
+	z-index: 1;
 }
+
 .logo{
 	font-size: 17px;
 	color: var(--color-white);
@@ -225,3 +235,43 @@
 	max-width: 160px;
 	color: var(--color-text);
 }
+
+ .hero_slider_icon {
+	background: var(--color-primary);
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	color: var(--color-white);
+
+	position: absolute;
+	top: calc(50% - 15px);
+ }
+
+ .hero_slider_icon:hover {
+	opacity: 0.5;
+	cursor: pointer;
+ }
+
+ .hero_slider {
+	position: relative;
+ }
+
+ .hero_slider_lefr {
+	left: var(--space-l);
+ }
+
+ .hero_slider_right {
+	right: var(--space-l);
+ }
+
+ .input {
+	caret-color: aqua;
+	border: 1px solid red;
+ }
+
+ :root {
+	scroll-behavior: smooth;
+ }
