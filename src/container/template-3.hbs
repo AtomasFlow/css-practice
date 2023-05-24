@@ -26,6 +26,11 @@
 
 <input type="text" class="input">
 
+<div class="modal">
+	{{hero.text}}
+	<div class="modal_text">{{hero.text}}</div>
+</div>
+
 <main class="blog">
 	{{#each blog}}
 	{{> cardBlog data=this}}
