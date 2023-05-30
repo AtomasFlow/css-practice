@@ -1,0 +1,12 @@
+{{#with data}}
+<div class="card_body" id="{{id}}">
+	<span class="new_no {{#if isNew}} new {{/if}}">{{#if isNew}} new {{/if}}</span>
+	<img src="{{photo}}" alt="Photo">
+	<div class="title">{{name}}</div>
+	<p>{{description}}</p>
+
+	<div>
+		<button>Read All</button>
+	</div>
+</div>
+{{/with}}
